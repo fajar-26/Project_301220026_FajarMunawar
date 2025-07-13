@@ -56,7 +56,8 @@ class Auth extends CI_Controller {
                     'first_name' => $user->first_name,
                     'last_name' => $user->last_name,
                     'investment_experience' => $user->investment_experience,
-                    'is_admin' => ($user->username == 'admin'),
+                    'role' => isset($user->role) ? $user->role : 'user',
+                    'is_admin' => (isset($user->role) && $user->role == 'admin'),
                     'logged_in' => TRUE
                 );
 
@@ -111,6 +112,14 @@ class Auth extends CI_Controller {
         if ($this->form_validation->run() == FALSE) {
             $this->register();
         } else {
+            // Validasi kode perusahaan jika role admin
+            $role = $this->input->post('role');
+            $company_code = $this->input->post('company_code');
+            if ($role === 'admin' && $company_code !== '868686') {
+                $this->session->set_flashdata('error', 'Kode perusahaan untuk admin salah!');
+                $this->register();
+                return;
+            }
             // Prepare user data
             $user_data = array(
                 'first_name' => $this->input->post('first_name'),
@@ -120,6 +129,7 @@ class Auth extends CI_Controller {
                 'phone' => $this->input->post('phone'),
                 'birth_date' => $this->input->post('birth_date') ? $this->input->post('birth_date') : null,
                 'investment_experience' => $this->input->post('investment_experience'),
+                'role' => $role,
                 'password' => $this->input->post('password')
             );
 

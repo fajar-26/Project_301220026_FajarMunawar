@@ -1,3 +1,10 @@
+<?php if ($this->session->userdata('is_admin')): ?>
+<div class="mb-3">
+    <a href="<?= base_url('admin') ?>" class="btn btn-dark">
+        <i class="fas fa-user-shield"></i> Ke Admin Panel
+    </a>
+</div>
+<?php endif; ?>
 <div class="row">
     <div class="col-md-12">
         <div class="card">

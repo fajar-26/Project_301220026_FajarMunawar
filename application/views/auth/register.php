@@ -114,6 +114,24 @@
     </div>
 
     <div class="form-group">
+        <label for="role" class="form-label">
+            <i class="fas fa-user-shield"></i> Daftar Sebagai
+        </label>
+        <select class="form-control" id="role" name="role" required>
+            <option value="user" <?= set_select('role', 'user', TRUE) ?>>User</option>
+            <option value="admin" <?= set_select('role', 'admin') ?>>Admin</option>
+        </select>
+    </div>
+
+    <div class="form-group" id="company-code-group" style="display:none;">
+        <label for="company_code" class="form-label">
+            <i class="fas fa-key"></i> Kode Perusahaan (khusus Admin)
+        </label>
+        <input type="text" class="form-control <?= form_error('company_code') ? 'is-invalid' : '' ?>" id="company_code" name="company_code" placeholder="Masukkan kode perusahaan">
+        <?= form_error('company_code', '<div class="invalid-feedback">', '</div>') ?>
+    </div>
+
+    <div class="form-group">
         <label for="password" class="form-label">
             <i class="fas fa-lock"></i> Password *
         </label>
@@ -264,6 +282,17 @@ document.getElementById('confirm_password').addEventListener('input', function()
             feedback.innerHTML = '<span style="color: #e74c3c;"><i class="fas fa-times"></i> Password tidak cocok</span>';
             this.classList.add('is-invalid');
         }
+    }
+});
+
+document.getElementById('role').addEventListener('change', function() {
+    var group = document.getElementById('company-code-group');
+    if (this.value === 'admin') {
+        group.style.display = '';
+        document.getElementById('company_code').setAttribute('required', 'required');
+    } else {
+        group.style.display = 'none';
+        document.getElementById('company_code').removeAttribute('required');
     }
 });
 

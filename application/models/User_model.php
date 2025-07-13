@@ -16,15 +16,17 @@ class User_model extends CI_Model {
      * Login user dengan email/username dan password
      */
     public function login($email_or_username, $password) {
-        $this->db->where('(email = ? OR username = ?)', array($email_or_username, $email_or_username));
         $this->db->where('is_active', 1);
+        $this->db->group_start();
+        $this->db->where('email', $email_or_username);
+        $this->db->or_where('username', $email_or_username);
+        $this->db->group_end();
         $user = $this->db->get($this->table)->row();
 
         if ($user && password_verify($password, $user->password)) {
             // Update last login
             $this->db->where('id', $user->id);
             $this->db->update($this->table, array('last_login' => date('Y-m-d H:i:s')));
-            
             return $user;
         }
         return false;
@@ -42,6 +44,9 @@ class User_model extends CI_Model {
         $data['is_verified'] = 0;
         $data['created_at'] = date('Y-m-d H:i:s');
         $data['updated_at'] = date('Y-m-d H:i:s');
+        if (!isset($data['role'])) {
+            $data['role'] = 'user';
+        }
 
         // Insert user
         if ($this->db->insert($this->table, $data)) {
