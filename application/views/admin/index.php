@@ -24,7 +24,7 @@
                                     <li class="mb-2"><i class="fas fa-tags text-primary me-2"></i>Kelola Kategori</li>
                                     <li><i class="fas fa-chalkboard-teacher text-primary me-2"></i>Kelola Webinar</li>
                                 </ul>
-                                <a href="#" class="btn btn-primary btn-sm mt-3 w-100">Kelola Konten</a>
+                                <a href="<?= base_url('admin/content') ?>" class="btn btn-primary btn-sm mt-3 w-100">Kelola Konten</a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                                     <li class="mb-2"><i class="fas fa-user-check text-warning me-2"></i>Aktivasi/Deaktivasi User</li>
                                     <li><i class="fas fa-key text-warning me-2"></i>Reset Password User</li>
                                 </ul>
-                                <a href="#" class="btn btn-warning btn-sm mt-3 w-100 text-white">Kelola User</a>
+                                <a href="<?= base_url('admin/users') ?>" class="btn btn-warning btn-sm mt-3 w-100 text-white">Kelola User</a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                                     <li class="mb-2"><i class="fas fa-user-clock text-info me-2"></i>User Activity</li>
                                     <li><i class="fas fa-fire text-info me-2"></i>Popular Content</li>
                                 </ul>
-                                <a href="#" class="btn btn-info btn-sm mt-3 w-100 text-white">Lihat Laporan</a>
+                                <a href="<?= base_url('admin/reporting') ?>" class="btn btn-info btn-sm mt-3 w-100 text-white">Lihat Laporan</a>
                             </div>
                         </div>
                     </div>

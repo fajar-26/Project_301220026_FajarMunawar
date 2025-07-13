@@ -21,4 +21,40 @@ class Admin extends CI_Controller {
         $this->load->view('admin/index', $data);
         $this->load->view('admin/footer');
     }
+
+    public function content() {
+        $data['title'] = 'Content Management - Admin';
+        $data['user'] = array(
+            'name' => $this->session->userdata('first_name') . ' ' . $this->session->userdata('last_name'),
+            'email' => $this->session->userdata('email'),
+            'role' => $this->session->userdata('role')
+        );
+        $this->load->view('admin/header', $data);
+        $this->load->view('admin/content', $data);
+        $this->load->view('admin/footer');
+    }
+
+    public function users() {
+        $data['title'] = 'User Management - Admin';
+        $data['user'] = array(
+            'name' => $this->session->userdata('first_name') . ' ' . $this->session->userdata('last_name'),
+            'email' => $this->session->userdata('email'),
+            'role' => $this->session->userdata('role')
+        );
+        $this->load->view('admin/header', $data);
+        $this->load->view('admin/users', $data);
+        $this->load->view('admin/footer');
+    }
+
+    public function reporting() {
+        $data['title'] = 'Reporting - Admin';
+        $data['user'] = array(
+            'name' => $this->session->userdata('first_name') . ' ' . $this->session->userdata('last_name'),
+            'email' => $this->session->userdata('email'),
+            'role' => $this->session->userdata('role')
+        );
+        $this->load->view('admin/header', $data);
+        $this->load->view('admin/reporting', $data);
+        $this->load->view('admin/footer');
+    }
 } 

@@ -59,3 +59,6 @@ $route['register'] = 'auth/register';
 $route['logout'] = 'auth/logout';
 $route['forgot-password'] = 'auth/forgot_password';
 $route['reset-password/(:any)'] = 'auth/reset_password/$1';
+$route['admin/content'] = 'admin/content';
+$route['admin/users'] = 'admin/users';
+$route['admin/reporting'] = 'admin/reporting';
