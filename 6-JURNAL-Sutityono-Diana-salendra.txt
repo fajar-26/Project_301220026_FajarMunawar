@@ -1,0 +1,373 @@
+                          Jurnal Informatika – COMPUTING Volume 11 Nomor 02, Bulan Desember Tahun 2024: 88 – 94
+                                                                                             ISSN: 2656 –386X
+                                                                                            e-ISSN: 2722 –2888
+
+
+
+
+     RANCANG BANGUN LITERASI FINANSIAL DAN INVESTASI MONEY MENTOR
+      PRO BERBASIS WEB DENGAN METODE WATERFALL (PT. IMPACT BYTE
+                         TEKNOLOGI EDUKASI)
+
+                                     Sutiyono1, Diana Salendra2
+
+
+ABSTRAK: PT. Impactbyte Teknologi Edukasi merupakan salah satu perusahaan digital yang
+menyediakan edukasi digital dimana disana para mahasiswa atau perorangan dapat measakan dan
+menambah ilmu baru. Pada kesempatan ini saya di tugaskan untuk membuat Perancangan
+Pembangunan Litereasi Money Mentor Pro, hal tersebut mendorong literasi dan edukasi yang
+dilaksanakan oleh Pt. Impacbyte Teknologi Informasi Dengan merangkum semua elemen ini dalam
+Perancangan ini, Website finansial dan investasi berbasis web dapat memberikan pengalaman yang
+berharga dan membantu individu mencapai tujuan keuangan mereka dengan lebih baik. Perancangan
+Pembangunan Literasi website sangat penting dan saling terkait. Pengalaman pengguna adalah proses
+merancang produk melalui pendekatan pengguna. Dengan pendekatan ini, Anda dapat membuat
+produk yang sesuai dengan kebutuhan dan keinginan pengguna Anda. Produk dengan desain yang
+baik akan menciptakan pengalaman yang menyenangkan bagi pengguna saat menggunakan produk
+Anda. Pengguna menjadi santai dan nyaman saat menggunakan produk. Permasalahan yang muncul
+terkait investasi pada perusahaan, beberapa langkah strategis dapat diambil. Pertama, perlu dibangun
+materi edukasi yang mudah dipahami dan terkini mengenai investasi perusahaan, menggunakan
+berbagai format seperti artikel, video, infografis, dan webinar. Selanjutnya, platform online edukasi
+dapat dikembangkan untuk menyediakan informasi dan kursus investasi secara gratis atau terjangkau,
+dengan modul-modul pembelajaran dan forum diskusi untuk memfasilitasi pertukaran informasi.
+Dengan adanya Perancangan Pembanguan Literasi Finansial dan investasi, diharapkan pengguna
+dapat mengatasi tantangan dalam mengelola keuangan mereka dengan lebih efektif dan efisien.
+Dengan antarmuka yang ramah pengguna dan pengalaman pengguna yang dioptimalkan, diharapkan
+pengguna dapat dengan mudah mengakses informasi penting tentang investasi, melacak portofolio
+mereka, serta membuat keputusan keuangan yang cerdas dan terinformasi.
+
+Kata kunci: Finansial dan Investasi, Literasi, Money Mentor Pro, Website.
+
+ABSTRACT: PT. Impactbyte Teknologi Edukasi is a digital company that provides digital education,
+where students or individuals can gain new knowledge and experience. On this occasion, I was tasked
+with designing and developing the Literacy Money Mentor Pro. This initiative aims to enhance literacy
+and education conducted by Pt. Impactbyte Teknologi Informasi. By incorporating all these elements
+into this design, a web-based financial and investment website can offer valuable experiences and
+help individuals better achieve their financial goals. The design and development of website literacy
+are crucial and interrelated. User experience is the process of designing products through a user-
+centered approach. With this approach, you can create products that meet the needs and desires of
+your users. A well-designed product will create a pleasant experience for users when using your
+product. Users will feel relaxed and comfortable while using the product. Addressing investment-
+related issues within the company, several strategic steps can be taken. First, it is necessary to
+develop easily understandable and up-to-date educational materials on company investments, using
+various formats such as articles, videos, infographics, and webinars. Additionally, an online
+educational platform can be developed to provide free or affordable investment information and
+courses, with learning modules and discussion forums to facilitate information exchange. With the
+design and development of Financial and Investment Literacy, it is expected that users can overcome
+challenges in managing their finances more effectively and efficiently. With a user-friendly interface
+                                                                                                                  88
+                           Jurnal Informatika – COMPUTING Volume 11 Nomor 02, Bulan Desember Tahun 2024: 88 – 94
+                                                                                              ISSN: 2656 –386X
+                                                                                             e-ISSN: 2722 –2888
+
+
+
+and optimized user experience, it is hoped that users can easily access important information about
+investments, track their portfolios, and make informed and intelligent financial decisions.
+
+Keywords: Finance and Investment, Literacy, Money Mentor Pro, Website.
+
+
+PENDAHULUAN                                                pengguna dapat mengatasi tantangan dalam
+                                                           mengelola keuangan mereka dengan lebih efektif
+     Investasi berkaitan dengan keuangan dan               dan efisien. Dengan antarmuka yang ramah
+ekonomi, atau akumulasi suatu bentuk aktiva                    pengguna dan pengalaman pengguna yang
+dengan suatu harapan mendapatkan keuntungan                dioptimalkan, diharapkan pengguna dapat
+di masa mendatang. Bagi penanam modal                      dengan mudah mengakses informasi penting
+(investor) atau perusahaan, investasi adalah               tentang investasi, melacak portofolio mereka,
+pengeluaran atau pembelanjaan untuk membeli                serta membuat keputusan keuangan yang cerdas
+barang-barang       modal     dan    perlengkapan-         dan terinformasi.
+perlengkapan untuk menambah kemampuan
+memproduksi barang atau jasa. (Syahputri, n.d.)           METODA
+PT. Impactbyte Teknologi Edukasi (SKILVUL)
+Skilvul adalah sebuah platform pendidikan                     Dalam penelitian ini penulis menggunakan
+teknologi yang menyediakan konten pelajaran                beberapa metode untuk mendapatkan data yang
+digital skills dengan metode “blended-learning”
+                                                           akurat yaitu observasi langsung pada PT.
+dalam bentuk online maupun offline. Platform ini
+                                                           Impactbyte Teknologi Edukasi, adapun metode
+bertujuan untuk membantu para pelajar,
+mahasiswa,         dan       profesional     dalam         pengembangan yang digunakan adalah metode
+mengembangkan keterampilan digital yang                    pengembangan perangkat lunak yaitu waterfall.
+relevan dengan kebutuhan industri saat ini. Skilvul
+menawarkan berbagai kursus dan program                     HASIL DAN PEMBAHASAN
+pelatihan yang mencakup topik-topik seperti
+pemrograman, desain UI/UX, analisis data, dan             1. Analisis
+keterampilan digital lainnya.Literasi keuangan dan           a. Analisis Pengguna
+investasi      di   Indonesia     masih    rendah,              Penganalisaan pengguna adalah berkaitan
+menyebabkan        banyak     masyarakat     belum              dengan yang akan memaikai Website
+memanfaatkan potensi investasi yang ada.                        Investasi ini. Pengguna Website Investasi ini
+Kurangnya pemahaman tentang pasar saham                         adalah user atau perorangan yang memakai
+dan      instrumen     investasi   lainnya   dapat              dan mengoperasikan website investasi ini,
+menyebabkan masyarakat kehilangan peluang                       karena pengguna diharuskan mengoprasikan
+untuk meraih keuntungan dan mengelola                           website ini dengan baik sebagaimana
+keuangan mereka dengan bijaksana. Adapun                        fungsinya.
+literasi keuangan yang dimaksud di sini adalah
+pemahaman mengenai fitur, manfaat, risiko, serta              b. Kebutuhan Perangkat Lunak
+hak dan kewajiban terkait produk dan layanan
+jasa keuangan.Pada penelitian terdahulu telah                          Tabel 1 Kebutuhan Perangkat Lunak
+menunjukan bahwa adanya Perancangan                                Sistem Operasi         Windows 10
+Pembangunan Finansial dan Investasi dapat
+membantu penelitian tersebut di antaranya Vicky                    Code editor            Visual Studio code
+Olindo1 , Ari Syaripudin (2022), Kemudian
+penelitian dilakaukan Muhamad Zein Akbar1 ,                        Database               Mysql
+Muhammad Afrizal Nur2, Muhammad Fauzan                             Diagram                Draw.io
+Sabana3, Thoyyibah Tanjung4(2023), lalu ada
+penelitian yang dilakukan oleh Dwi Novia                           UI Design              Figma
+Satriana1, Verdi Yasin 2, Anton Zulkarnain
+Sianipar (2023)Dengan adanya Perancangan
+Literasi Finansial dan investasi, diharapkan
+                                                                                                                   89
+                           Jurnal Informatika – COMPUTING Volume 11 Nomor 02, Bulan Desember Tahun 2024: 88 – 94
+                                                                                              ISSN: 2656 –386X
+                                                                                             e-ISSN: 2722 –2888
+
+
+
+   c. Kebutuhan Perangkat Keras
+                                                              2) Simulasi Literasi
+          Tabel 2 Kebutuhan Perangkat Keras
+       No      Item           Spesifikasi
+
+        1   Processor      Kecepatan 2.10GHz
+        2   Harddisk              500 GB
+        3   Memory                 16GB
+        4   Monitor         Resolusi 1366x 768
+
+2. Use Case Diagram
+   Use Case diagram Literasi ini akan di tampilkan
+   pada gambar berikut:
+
+
+
+
+                                                                              Gambar 3 Activity Literasi
+
+                                                              3) Topik
+
+
+
+
+            Gambar 1 Use Case Diagram
+
+3. Activity Diagram
+   Activity diagram adalah salah satu cara
+   memodelkan event – event yang terjadi dalam
+   suatu user case.
+   1) Login
+
+
+
+
+                                                                              Gambar 4 Activity Topik
+
+                                                          4. Class Diagram
+                                                             Class    diagram    adalah   diagram   yang
+                                                             menggambarkan struktur sistem dari segi
+                                                             pendefinisian kelas – kelas yang akan dibuat
+                                                             untuk membangun sistem.
+
+                 Gambar 2 Activity Login
+
+                                                                                                                   90
+                             Jurnal Informatika – COMPUTING Volume 11 Nomor 02, Bulan Desember Tahun 2024: 88 – 94
+                                                                                                ISSN: 2656 –386X
+                                                                                               e-ISSN: 2722 –2888
+
+
+
+
+                                                                3) Topik
+
+
+
+
+              Gambar 5 Class Diagram                                           Gambar 8 Wire Frame Topik
+                                                            6. Implementasi
+5. Rancangan User Interface                                    Berikut ini adalah beberapa hasil implementasi
+   Rancangan user interface dibuat agar                        user interface yang sudah dibuat:
+   mempermudah pengerjaan penulis dalam                        1) Login
+   membangun atau membuat tampilan aplikasi.
+
+   1) Login
+
+
+
+
+                                                                              Gambar 9 user interface login
+
+                                                                2) Literasi
+                 Gambar 6 Wire Frame Login
+
+   2) Literasi
+
+
+
+
+                                                                            Gambar 10 User Interface Literasi
+                 Gambar 7 Wire Frame Literasi
+                                                                                                                     91
+                            Jurnal Informatika – COMPUTING Volume 11 Nomor 02, Bulan Desember Tahun 2024: 88 – 94
+                                                                                               ISSN: 2656 –386X
+                                                                                              e-ISSN: 2722 –2888
+
+
+
+                                                               menampilkan artikel yang relevan dengan kata
+   3) Topik                                                    kunci tersebut.
+                                                               Dalam pengujian fitur investasi, skenario
+                                                               pengujian meliputi penggunaan simulasi
+                                                               investasi, di mana pengguna dapat mengakses
+                                                               kalkulator investasi, memasukkan jumlah dana,
+                                                               durasi, dan tingkat bunga untuk melihat estimasi
+                                                               keuntungan atau kerugian. Selain itu, pengujian
+                                                               pembelian produk investasi dilakukan dengan
+                                                               memilih produk (misalnya reksa dana),
+                                                               memasukkan jumlah dana yang akan
+                                                               diinvestasikan, dan mengklik tombol "Beli".
+                                                               Sistem kemudian menampilkan ringkasan
+                                                               transaksi dan meminta konfirmasi sebelum
+                                                               melanjutkan. Pengujian laporan investasi
+                                                               memastikan       bahwa      pengguna      dapat
+                                                               mengakses dan melihat laporan investasi
+                                                               mereka, termasuk rincian transaksi dan
+                                                               performa investasi pada periode waktu tertentu.
+
+               Gambar 11 User Interface Topik
+7. Pengujian
+   Pada tahap pengujian fungsionalitas umum,
+   pengujian      dimulai    dengan      memastikan       SIMPULAN DAN SARAN
+   pengguna dapat melakukan login dengan akun                  Berdasarkan penelitian yang telah dilakukan
+   yang valid. Pengguna diminta untuk membuka               penulis melalui beberapa tahapan yang dilakukan
+   halaman login, memasukkan username dan                   sebelumnya,      maka      penulis    mengambil
+   password yang benar, dan mengklik tombol                 kesimpulan bahwa:
+   "Login". Hasil yang diharapkan adalah pengguna            1. Adanya literasi finansial dan investasi
+   berhasil masuk ke dashboard aplikasi.                        diharapkan dapat memberikan dampak
+   Selanjutnya, pengujian registrasi pengguna baru              positif yang signifikan bagi masyarakat.
+   dilakukan dengan mengisi form registrasi                     Dengan peningkatan literasi finansial,
+   dengan data yang valid, seperti nama, email,                 individu akan lebih mampu mengelola
+   dan kata sandi.                                              keuangan pribadi, membuat keputusan
+   kemudian mengklik tombol "Daftar". Hasil yang                investasi yang lebih bijak, dan menghindari
+   diharapkan adalah pengguna terdaftar dan                     risiko keuangan yang tidak perlu.
+   menerima email konfirmasi. Pengujian logout               2. Adanya literasi finansial dan investasi
+   memastikan bahwa pengguna dapat keluar dari                  diharapkan dapat meningkatkan kemampuan
+   aplikasi dengan mengklik tombol logout pada                  individu    dalam    membuat       keputusan
+   dashboard, dan sistem mengarahkan pengguna                   keuangan      yang    lebih    cerdas    dan
+   kembali ke halaman login.                                    terinformasi. Dengan pemahaman yang lebih
+   Pada pengujian fitur literasi finansial, pengguna            baik tentang konsep-konsep finansial,
+   diuji untuk mengakses artikel terkait literasi               masyarakat akan lebih sadar akan
+   finansial dari halaman beranda dengan mengklik               pentingnya pengelolaan keuangan pribadi,
+   link artikel yang tersedia. Pengujian pencarian              termasuk dalam hal budgeting, tabungan,
+   artikel juga dilakukan untuk memastikan fitur                dan perencanaan masa depan.
+   pencarian berfungsi dengan baik; pengguna                 3. Adanya literasi finansial dan investasi
+   cukup memasukkan kata kunci (misalnya                        diharapkan membantu masyarakat dalam
+   "investasi saham") pada kolom pencarian dan                  meningkatkan kemampuan mereka untuk
+   mengklik tombol "Cari". Sistem diharapkan                    mengelola keuangan pribadi secara lebih
+                                                                                                                    92
+                           Jurnal Informatika – COMPUTING Volume 11 Nomor 02, Bulan Desember Tahun 2024: 88 – 94
+                                                                                              ISSN: 2656 –386X
+                                                                                             e-ISSN: 2722 –2888
+
+
+
+    efektif, membuat keputusan investasi yang
+    lebih terinformasi, dan merencanakan masa              PUSTAKA ACUAN
+    depan finansial dengan lebih baik.
+                                                            Abdul Wahid, A. (2020). Analisis Metode
+    Untuk memaksimalkan hasil pada penelitian                    Waterfall Untuk Pengembangan Sistem
+ini diberikan saran agar dapat memaksimalkan                     Informasi. Jurnal Ilmu-Ilmu Informatika Dan
+dari penelitian ini, sebagai berikut:                            Manajemen STMIK, November, 1–5.
+ 1. Untuk menunjang penyempurnaan website                   Akbar, M. Z., Nur, M. A., Sabana, M. F., & ...
+     ini, dapat menambahkan fitur challenge                      (2022). Perancangan Aplikasi Kasir
+     bulanan dengan hadiah yang lebih cocok                      Berbasis Website Pada Toko Sembako
+     dengan karakter dan isi dari website ini.                   Menggunakan Metode Waterfall. OKTAL:
+     Challenge bulanan ini bisa berupa tantangan                 Jurnal Ilmu Komputer Dan Science, 1(08),
+     investasi virtual, di mana pengguna bersaing                1274–1281.
+     untuk membuat portofolio investasi yang                     https://journal.mediapublikasi.id/index.php/
+     paling menguntungkan dalam periode                          oktal/article/view/509%0Ahttps://journal.m
+     tertentu. Selain itu, tantangan lainnya bisa                ediapublikasi.id/index.php/oktal/article/dow
+     berupa kuis atau trivia tentang pengetahuan                 nload/509/440
+     investasi, yang tidak hanya menguji                    Annisa Paramitha S.Kom., M. K. (2020). Materi -
+     pengetahuan        pengguna      tetapi  juga               3 Diagram Use Case. Jurnal, 23.
+     memberikan edukasi yang bermanfaat.                    Bowers, T. S., Jackson, K. J., & Helgeson, H. C.
+     Hadiah yang ditawarkan dapat berupa akses                   (1984). Activity Diagrams. Equilibrium
+     eksklusif ke konten premium, konsultasi                     Activity          Diagrams,           1–290.
+     gratis dengan ahli investasi, atau bahkan                   https://doi.org/10.1007/978-3-642-46511-
+     hadiah uang tunai untuk mendorong                           6_1
+     partisipasi lebih banyak pengguna.                     Dr. Ruliah, M.Kom. Andri Suryadi, S.Kom., M. K.
+ 2. Dalam hal investasi ada beberapa risiko yang                 (2016). Basis Data dan Sistem Basis Data
+     harus dihadapi. Bisa menambahkan fitur                      Daftar Isi. 1–35.
+     simulasi risiko interaktif untuk membantu              Eko, S. (2022). Perancangan Aplikasi
+     individu atau organisasi memahami dan                       Pengenalan Budaya Nusantara Berbasis
+     mengevaluasi berbagai jenis risiko yang                     Android Dengan Metode Rad. Jurnal Ilmu
+     mungkin mereka hadapi dalam konteks                         Komputer JIK, 5(01), 30–39.
+     investasi atau manajemen proyek. Fitur ini             Lano, K. (2016). Class Diagrams - pendefinisian
+     akan memberikan wawasan yang lebih                          kelas – kelas yang akan dibuat untuk
+     mendalam tentang potensi ancaman dan                        membangun sistem. Agile Model-Based
+     dampaknya terhadap keputusan investasi.                     Development Using UML-RSDS, 1–12.
+ 3. Menambahkan fitur pencarian topik yang                  Muhyidin, M. A., Sulhan, M. A., & Sevtiana, A.
+     diinginkan untuk menambah wawasan                           (2020). Perancangan Ui/Ux Aplikasi My Cic
+     tentang investasi akan mempermudah                          Layanan Informasi Akademik Mahasiswa
+     pengguna dalam menemukan informasi yang                     Menggunakan Aplikasi Figma. Jurnal Digit,
+     relevan dan terpercaya. Dengan adanya fitur                 10(2),                                   208.
+     ini, pengguna dapat dengan mudah                            https://doi.org/10.51920/jd.v10i2.171
+     mengakses berbagai artikel, analisis, dan              Novendri. (2019). Pengertian Web. Lentera
+     panduan investasi yang sesuai dengan minat                  Dumai, 10(2), 46–57.
+     dan kebutuhan mereka. Selain itu, fitur ini            Olindo, V., & Syaripudin, A. (2022).
+     juga dapat menyarankan topik-topik terkait                  Perancangan Sistem Informasi Absensi
+     yang mungkin belum terpikirkan oleh                         Pegawai Berbasis Web Dengan Metode
+     pengguna,        sehingga     mereka    dapat               Waterfall. OKTAL : Jurnal Ilmu Komputer
+     memperluas pengetahuan dan pemahaman                        Dan Science, 1(1), 17–26.
+     mereka tentang berbagai aspek investasi.
+
+                                                                                                                   93
+                          Jurnal Informatika – COMPUTING Volume 11 Nomor 02, Bulan Desember Tahun 2024: 88 – 94
+                                                                                             ISSN: 2656 –386X
+                                                                                            e-ISSN: 2722 –2888
+
+
+
+Paramitha, A. (2015). Equence iagram. 13.
+      https://repository.unikom.ac.id/47565/1/6.
+      Sequence Diagram.pdf
+Parjito, P. J., Rahmawati, O., & Ulum, F. (2023).
+      Rancang Bangun Aplikasi E-Agribisnis
+      Untuk Meningkatkan Penjualan Hasil
+      Tanaman Hortikultura. Jurnal Informatika
+      Dan Rekayasa Perangkat Lunak, 3(3),
+      354–365.
+      https://doi.org/10.33365/jatika.v3i3.2362
+Raka, S. (2020). Pembuatan Program Presensi
+      Pegawai Berbasis Web Pada PT
+      Multifortuna Sinardelta. Jurnal Teknik
+      Informatika, 1(1), 70.
+Sanjaya, R., & Hesinto, S. (2018). Rancang
+      Bangun Website Profil Hotel Agung
+      Prabumulih Menggunakan Framework
+      Bootstrap. Jurnal Teknologi Dan Informasi,
+      7(2),                                 57–64.
+      https://doi.org/10.34010/jati.v7i2.758
+Satriana, D. N., Yasin, V., & Sianipar, A. Z.
+      (2021). Perancangan aplikasi pengelolaan
+      buku      induk    siswa    berbasis    web
+      menggunakan model waterfall pada sdn
+      rawamangun 09. Jurnal Widya, 2(2), 90–
+      101. https://doi.org/10.54593/awl.v2i2.22
+Sumarlinda, S. (2020). Xampp. Journal of
+      Chemical Information and Modeling, 53(9),
+      10–25.
+Suratman. (2002). Aspek Ekonomi Finansial.
+      Jurnal FSTPT International Symposium,
+      40–45.
+Susilawati, T., Yuliansyah, F., Romzi, M., &
+      Aryani, R. (2020). Membangun Website
+      Toko Online Pempek Nthree Menggunakan
+      Php Dan Mysql. Jurnal Teknik Informatika
+      Mahakarya (JTIM), 3(1), 35–44.
+Syahputri, A. A. (n.d.). Resume Risiko Dalam
+      Investasi.
+
+
+
+
+                                                                                                                  94
+
