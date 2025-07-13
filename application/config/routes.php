@@ -62,3 +62,7 @@ $route['reset-password/(:any)'] = 'auth/reset_password/$1';
 $route['admin/content'] = 'admin/content';
 $route['admin/users'] = 'admin/users';
 $route['admin/reporting'] = 'admin/reporting';
+$route['admin/articles'] = 'admin/articles';
+$route['admin/videos'] = 'admin/videos';
+$route['admin/categories'] = 'admin/categories';
+$route['admin/webinars'] = 'admin/webinars';

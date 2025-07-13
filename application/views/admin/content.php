@@ -12,7 +12,7 @@
                                 <i class="fas fa-newspaper fa-2x mb-2 text-primary"></i>
                                 <h6 class="fw-bold">Kelola Artikel</h6>
                                 <p class="text-muted small">Tambah, edit, hapus artikel literasi & berita.</p>
-                                <a href="#" class="btn btn-primary btn-sm w-100">Kelola Artikel</a>
+                                <a href="<?= base_url('admin/articles') ?>" class="btn btn-primary btn-sm w-100">Kelola Artikel</a>
                             </div>
                         </div>
                     </div>
@@ -22,7 +22,7 @@
                                 <i class="fas fa-video fa-2x mb-2 text-success"></i>
                                 <h6 class="fw-bold">Upload Video</h6>
                                 <p class="text-muted small">Upload dan kelola video tutorial edukasi.</p>
-                                <a href="#" class="btn btn-success btn-sm w-100">Kelola Video</a>
+                                <a href="<?= base_url('admin/videos') ?>" class="btn btn-success btn-sm w-100">Kelola Video</a>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                                 <i class="fas fa-tags fa-2x mb-2 text-warning"></i>
                                 <h6 class="fw-bold">Kelola Kategori</h6>
                                 <p class="text-muted small">Manajemen kategori artikel & video.</p>
-                                <a href="#" class="btn btn-warning btn-sm w-100 text-white">Kelola Kategori</a>
+                                <a href="<?= base_url('admin/categories') ?>" class="btn btn-warning btn-sm w-100 text-white">Kelola Kategori</a>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                                 <i class="fas fa-chalkboard-teacher fa-2x mb-2 text-info"></i>
                                 <h6 class="fw-bold">Kelola Webinar</h6>
                                 <p class="text-muted small">Jadwal, peserta, dan materi webinar.</p>
-                                <a href="#" class="btn btn-info btn-sm w-100 text-white">Kelola Webinar</a>
+                                <a href="<?= base_url('admin/webinars') ?>" class="btn btn-info btn-sm w-100 text-white">Kelola Webinar</a>
                             </div>
                         </div>
                     </div>

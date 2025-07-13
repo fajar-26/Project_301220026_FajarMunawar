@@ -125,4 +125,57 @@ class Admin extends CI_Controller {
         $this->load->view('admin/reporting', $data);
         $this->load->view('admin/footer');
     }
+
+    public function articles() {
+        $this->load->model('Admin_content_model');
+        $data['title'] = 'Daftar Artikel';
+        $data['user'] = array(
+            'name' => $this->session->userdata('first_name') . ' ' . $this->session->userdata('last_name'),
+            'email' => $this->session->userdata('email'),
+            'role' => $this->session->userdata('role')
+        );
+        $data['articles'] = $this->Admin_content_model->get_articles();
+        $this->load->view('admin/header', $data);
+        $this->load->view('admin/articles', $data);
+        $this->load->view('admin/footer');
+    }
+    public function videos() {
+        $this->load->model('Admin_content_model');
+        $data['title'] = 'Daftar Video';
+        $data['user'] = array(
+            'name' => $this->session->userdata('first_name') . ' ' . $this->session->userdata('last_name'),
+            'email' => $this->session->userdata('email'),
+            'role' => $this->session->userdata('role')
+        );
+        $data['videos'] = $this->Admin_content_model->get_videos();
+        $this->load->view('admin/header', $data);
+        $this->load->view('admin/videos', $data);
+        $this->load->view('admin/footer');
+    }
+    public function categories() {
+        $this->load->model('Admin_content_model');
+        $data['title'] = 'Daftar Kategori';
+        $data['user'] = array(
+            'name' => $this->session->userdata('first_name') . ' ' . $this->session->userdata('last_name'),
+            'email' => $this->session->userdata('email'),
+            'role' => $this->session->userdata('role')
+        );
+        $data['categories'] = $this->Admin_content_model->get_categories();
+        $this->load->view('admin/header', $data);
+        $this->load->view('admin/categories', $data);
+        $this->load->view('admin/footer');
+    }
+    public function webinars() {
+        $this->load->model('Admin_content_model');
+        $data['title'] = 'Daftar Webinar';
+        $data['user'] = array(
+            'name' => $this->session->userdata('first_name') . ' ' . $this->session->userdata('last_name'),
+            'email' => $this->session->userdata('email'),
+            'role' => $this->session->userdata('role')
+        );
+        $data['webinars'] = $this->Admin_content_model->get_webinars();
+        $this->load->view('admin/header', $data);
+        $this->load->view('admin/webinars', $data);
+        $this->load->view('admin/footer');
+    }
 } 
