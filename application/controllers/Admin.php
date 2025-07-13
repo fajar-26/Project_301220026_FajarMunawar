@@ -115,12 +115,18 @@ class Admin extends CI_Controller {
     }
 
     public function reporting() {
+        $this->load->model('Admin_content_model');
+        $this->load->database();
         $data['title'] = 'Reporting - Admin';
         $data['user'] = array(
             'name' => $this->session->userdata('first_name') . ' ' . $this->session->userdata('last_name'),
             'email' => $this->session->userdata('email'),
             'role' => $this->session->userdata('role')
         );
+        $data['stat_users'] = $this->db->count_all('users');
+        $data['stat_articles'] = $this->Admin_content_model->count_articles();
+        $data['stat_videos'] = $this->Admin_content_model->count_videos();
+        $data['stat_webinars'] = $this->Admin_content_model->count_webinars();
         $this->load->view('admin/header', $data);
         $this->load->view('admin/reporting', $data);
         $this->load->view('admin/footer');
