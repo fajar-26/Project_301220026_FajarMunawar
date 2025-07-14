@@ -20,6 +20,9 @@
     <div class="text-center mt-4 mb-5 d-none" id="sertifikat-btn-area">
         <button class="btn btn-outline-success" id="downloadSertifikat"><i class="fas fa-certificate"></i> Download Sertifikat</button>
     </div>
+    <div class="text-center mt-4 mb-5 d-none" id="btn-kembali-quiz">
+        <a href="<?= base_url('challenge/quiz') ?>" class="btn btn-outline-primary"><i class="fas fa-arrow-left"></i> Kembali ke Dashboard Quiz</a>
+    </div>
     <div id="sertifikat-area" style="visibility:hidden;position:absolute;left:-9999px;"></div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -82,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('result-area').classList.remove('d-none');
         document.getElementById('result-area').innerHTML = review;
         document.getElementById('sertifikat-btn-area').classList.remove('d-none');
+        document.getElementById('btn-kembali-quiz').classList.remove('d-none');
     };
     document.getElementById('downloadSertifikat').onclick = function() {
         // Generate sertifikat

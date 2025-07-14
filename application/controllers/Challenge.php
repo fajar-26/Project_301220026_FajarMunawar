@@ -14,7 +14,8 @@ class Challenge extends CI_Controller {
     }
     public function leaderboard() {
         $user = $this->session->userdata('user');
-        $this->load->view('challenge/leaderboard', ['user' => $user]);
+        $leaderboard = $this->Challenge_model->get_leaderboard(20);
+        $this->load->view('challenge/leaderboard', ['user' => $user, 'leaderboard' => $leaderboard]);
     }
     public function result() {
         $user = $this->session->userdata('user');
@@ -152,5 +153,22 @@ class Challenge extends CI_Controller {
             ],
         ];
         $this->load->view('challenge/quiz_bulanan', ['user' => $user, 'questions' => $questions]);
+    }
+    public function submit_quiz_bulanan() {
+        if ($this->input->method() === 'post') {
+            $user = $this->session->userdata('user');
+            $user_id = isset($user['id']) ? $user['id'] : null;
+            $user_name = isset($user['name']) ? $user['name'] : $this->input->post('user_name', true);
+            $score = (int)$this->input->post('score');
+            $total_questions = (int)$this->input->post('total_questions');
+            if ($user_name && $score >= 0 && $total_questions > 0) {
+                $this->Challenge_model->save_leaderboard($user_id, $user_name, $score, $total_questions);
+                echo json_encode(['success' => true]);
+            } else {
+                echo json_encode(['success' => false, 'error' => 'Data tidak lengkap']);
+            }
+        } else {
+            show_404();
+        }
     }
 } 
