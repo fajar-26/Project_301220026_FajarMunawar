@@ -17,10 +17,10 @@
         </div>
     </form>
     <div id="result-area" class="d-none"></div>
-    <div class="text-center mt-3 d-none" id="sertifikat-btn-area">
+    <div class="text-center mt-4 mb-5 d-none" id="sertifikat-btn-area">
         <button class="btn btn-outline-success" id="downloadSertifikat"><i class="fas fa-certificate"></i> Download Sertifikat</button>
     </div>
-    <div id="sertifikat-area" style="display:none;"></div>
+    <div id="sertifikat-area" style="visibility:hidden;position:absolute;left:-9999px;"></div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script>
@@ -98,7 +98,9 @@ document.addEventListener('DOMContentLoaded', function() {
             `<div style='font-size:14px;color:#888;'>Money Mentor Pro</div>`+
             `</div>`;
         document.getElementById('sertifikat-area').innerHTML = html;
-        html2pdf(document.getElementById('sertifikat-area'), {margin:0, filename:'Sertifikat_Quiz_Literasi.pdf', html2canvas:{scale:2}, jsPDF:{orientation:'landscape'}});
+        setTimeout(function() {
+            html2pdf(document.getElementById('sertifikat-area'), {margin:0, filename:'Sertifikat_Quiz_Literasi.pdf', html2canvas:{scale:2}, jsPDF:{orientation:'landscape'}});
+        }, 300);
     };
 });
 </script>
