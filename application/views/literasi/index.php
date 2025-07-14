@@ -28,13 +28,29 @@
                 <img src="<?= htmlspecialchars($a->featured_image) ?>" class="card-img-top" alt="Gambar Artikel" style="max-height:180px;object-fit:cover;">
             <?php endif; ?>
             <div class="card-body">
-                <span class="badge bg-secondary mb-2">Kategori: <?= htmlspecialchars($a->category_name ?? '-') ?></span>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-secondary">Kategori: <?= htmlspecialchars($a->category_name ?? '-') ?></span>
+                    <?php if(isset($user['id'])): ?>
+                        <form method="post" action="<?= base_url('literasi/detail/'.$a->id) ?>" class="d-inline">
+                            <input type="hidden" name="bookmark" value="1">
+                            <button class="btn btn-sm btn-link p-0" type="submit" title="Bookmark">
+                                <i class="fas fa-bookmark<?= (isset($a->is_bookmarked) && $a->is_bookmarked) ? '' : '-o' ?> text-warning"></i>
+                            </button>
+                        </form>
+                    <?php endif; ?>
+                </div>
                 <h5 class="card-title fw-bold"><?= htmlspecialchars($a->title) ?></h5>
                 <p class="card-text small text-muted mb-2">
                     <i class="fas fa-clock"></i> <?= $a->reading_time ?? 5 ?> menit baca
+                    &nbsp;|&nbsp;
+                    <?php $avg = isset($a->avg_rating) ? $a->avg_rating : 0; for($i=1;$i<=5;$i++): ?>
+                        <i class="fas fa-star<?= $avg>=$i?' text-warning':' text-secondary' ?>"></i>
+                    <?php endfor; ?>
+                    <span class="ms-1">(<?= $avg ?>)</span>
                 </p>
                 <p class="card-text"> <?= htmlspecialchars(mb_strimwidth(strip_tags($a->content),0,100,'...')) ?> </p>
-                <a href="#" class="btn btn-outline-primary btn-sm">Baca Selengkapnya</a>
+                <a href="<?= base_url('literasi/detail/'.$a->id) ?>" class="btn btn-outline-primary btn-sm">Baca Selengkapnya</a>
+                <button class="btn btn-outline-secondary btn-sm ms-2" onclick="navigator.clipboard.writeText('<?= base_url('literasi/detail/'.$a->id) ?>');alert('Link disalin!')"><i class="fas fa-link"></i></button>
             </div>
         </div>
     </div>
