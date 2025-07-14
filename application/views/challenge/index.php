@@ -12,7 +12,7 @@
                     <p>Ikuti challenge investasi virtual bulanan, kumpulkan poin, dan raih peringkat di leaderboard. Hadiah menarik menanti pemenang!</p>
                 </div>
                 <a href="<?= site_url('challenge/leaderboard') ?>" class="btn btn-success mt-2"><i class="fas fa-trophy"></i> Lihat Leaderboard</a>
-                <a href="<?= site_url('challenge/quiz') ?>" class="btn btn-primary mt-2"><i class="fas fa-play"></i> Ikuti Challenge</a>
+                <a href="<?= site_url('challenge/quiz_bulanan') ?>" class="btn btn-primary mt-2"><i class="fas fa-play"></i> Ikuti Challenge</a>
             </div>
         </div>
     </div>

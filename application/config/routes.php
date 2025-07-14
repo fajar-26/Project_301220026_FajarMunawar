@@ -73,3 +73,4 @@ $route['challenge/quiz'] = 'challenge/quiz';
 $route['challenge/leaderboard'] = 'challenge/leaderboard';
 $route['challenge/result'] = 'challenge/result';
 $route['challenge/quiz_interaktif'] = 'challenge/quiz_interaktif';
+$route['challenge/quiz_bulanan'] = 'challenge/quiz_bulanan';

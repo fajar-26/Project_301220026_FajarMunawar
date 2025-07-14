@@ -3,9 +3,7 @@
     <h2 class="fw-bold mb-2"><i class="fas fa-trophy"></i> Leaderboard Challenge Bulanan</h2>
     <p class="text-muted">Lihat ranking peserta challenge bulanan dan raih posisi teratas untuk memenangkan hadiah!</p>
 </div>
-<div class="mb-3">
-    <a href="#" class="btn btn-success disabled"><i class="fas fa-flag-checkered"></i> Ikuti Challenge (Coming Soon)</a>
-</div>
+<a href="<?= base_url('challenge/quiz_bulanan') ?>" class="btn btn-success mb-3"><i class="fas fa-flag-checkered"></i> Mulai Challenge Bulanan</a>
 <div class="card mb-4">
     <div class="card-header bg-warning text-dark">
         <b>Hadiah untuk Top 3 Pemenang!</b> <span class="ms-2">🏅🏅🏅</span>

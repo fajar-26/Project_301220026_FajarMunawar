@@ -97,4 +97,60 @@ class Challenge extends CI_Controller {
         ];
         $this->load->view('challenge/quiz_interaktif', ['user' => $user, 'questions' => $questions]);
     }
+    public function quiz_bulanan() {
+        $user = $this->session->userdata('user');
+        $questions = [
+            [
+                'question' => 'Jika kamu berinvestasi Rp1.000.000 di reksa dana saham dengan return 10% per tahun, berapa estimasi dana kamu setelah 1 tahun?',
+                'choices' => [
+                    'A. Rp1.100.000',
+                    'B. Rp1.010.000',
+                    'C. Rp1.200.000',
+                    'D. Rp1.900.000',
+                ],
+                'answer' => 0
+            ],
+            [
+                'question' => 'Manakah yang termasuk risiko utama investasi saham?',
+                'choices' => [
+                    'A. Harga naik terus',
+                    'B. Harga turun drastis',
+                    'C. Tidak ada risiko',
+                    'D. Selalu untung',
+                ],
+                'answer' => 1
+            ],
+            [
+                'question' => 'Jika kamu ingin investasi dengan risiko paling rendah, produk apa yang sebaiknya dipilih?',
+                'choices' => [
+                    'A. Saham',
+                    'B. Reksa Dana Campuran',
+                    'C. Obligasi Pemerintah',
+                    'D. Bitcoin',
+                ],
+                'answer' => 2
+            ],
+            [
+                'question' => 'Apa tujuan utama melakukan diversifikasi investasi?',
+                'choices' => [
+                    'A. Memaksimalkan risiko',
+                    'B. Mengurangi risiko',
+                    'C. Mengurangi keuntungan',
+                    'D. Membayar pajak',
+                ],
+                'answer' => 1
+            ],
+            [
+                'question' => 'Jika kamu ikut challenge bulanan dan mendapat skor tertinggi, apa yang kamu dapatkan?',
+                'choices' => [
+                    'A. Sertifikat',
+                    'B. Hadiah & Ranking di Leaderboard',
+                    'C. Tidak dapat apa-apa',
+                    'D. Dapat hutang',
+                ],
+                'answer' => 1
+            ],
+        ];
+        $this->load->view('challenge/quiz_bulanan', ['user' => $user, 'questions' => $questions]);
+    }
 } 
