@@ -37,7 +37,7 @@
                                 <i class="fas fa-calculator fa-3x mb-3"></i>
                                 <h5>Simulasi Investasi</h5>
                                 <p>Hitung potensi keuntungan investasi</p>
-                                <a href="#" class="btn btn-light">Coba Simulasi</a>
+                                <a href="<?= base_url('simulasi') ?>" class="btn btn-light">Coba Simulasi</a>
                             </div>
                         </div>
                     </div>
