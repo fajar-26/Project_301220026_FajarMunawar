@@ -17,11 +17,18 @@
         </div>
     </form>
     <div id="result-area" class="d-none"></div>
+    <div class="text-center mt-3 d-none" id="sertifikat-btn-area">
+        <button class="btn btn-outline-success" id="downloadSertifikat"><i class="fas fa-certificate"></i> Download Sertifikat</button>
+    </div>
+    <div id="sertifikat-area" style="display:none;"></div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script>
 const questions = <?= json_encode($questions) ?>;
 let current = 0;
 let answers = Array(questions.length).fill(null);
+let score = 0;
+let statusLulus = false;
 
 function renderQuestion(idx) {
     const q = questions[idx];
@@ -52,12 +59,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('quizForm').onsubmit = function(e) {
         e.preventDefault();
         // Hitung skor
-        let score = 0;
+        score = 0;
         let review = '';
         for(let i=0; i<questions.length; i++) {
             if(answers[i] === questions[i].answer) score++;
         }
+        statusLulus = score >= 5;
         review += `<div class='alert alert-success'>Skor Anda: <b>${score} / ${questions.length}</b></div>`;
+        review += `<div class='mb-2'><b>Status: </b> <span class='badge bg-${statusLulus ? 'success' : 'danger'}'>${statusLulus ? 'Lulus' : 'Tidak Lulus'}</span></div>`;
         review += '<h5>Review Jawaban:</h5><ol>';
         for(let i=0; i<questions.length; i++) {
             let benar = answers[i] === questions[i].answer;
@@ -69,12 +78,27 @@ document.addEventListener('DOMContentLoaded', function() {
             review += '</li>';
         }
         review += '</ol>';
-        if(score === questions.length) {
-            review += `<div class='alert alert-info'><i class='fas fa-certificate'></i> Selamat! Anda lulus dan berhak mendapatkan sertifikat.</div>`;
-        }
         document.getElementById('quizForm').classList.add('d-none');
         document.getElementById('result-area').classList.remove('d-none');
         document.getElementById('result-area').innerHTML = review;
+        document.getElementById('sertifikat-btn-area').classList.remove('d-none');
+    };
+    document.getElementById('downloadSertifikat').onclick = function() {
+        // Generate sertifikat
+        let nama = <?= json_encode(isset($user['name']) ? $user['name'] : 'Guest') ?>;
+        let tgl = new Date().toLocaleDateString('id-ID');
+        let html = `<div style='width:600px;min-height:350px;border:8px double #4caf50;padding:32px 24px;text-align:center;font-family:sans-serif;background:#fff;'>`+
+            `<h2 style='color:#4caf50;margin-bottom:0;'>SERTIFIKAT KELULUSAN</h2>`+
+            `<div style='font-size:18px;margin-bottom:16px;'>Quiz Literasi Keuangan & Investasi</div>`+
+            `<div style='margin:24px 0 16px 0;'>Diberikan kepada</div>`+
+            `<div style='font-size:28px;font-weight:bold;margin-bottom:8px;'>${nama}</div>`+
+            `<div style='margin-bottom:16px;'>Atas partisipasi dan pencapaian skor <b>${score} / ${questions.length}</b></div>`+
+            `<div style='margin-bottom:16px;'>Status: <span style='color:${statusLulus ? '#388e3c' : '#d32f2f'};font-weight:bold;'>${statusLulus ? 'Lulus' : 'Tidak Lulus'}</span></div>`+
+            `<div style='margin-bottom:16px;'>Tanggal: ${tgl}</div>`+
+            `<div style='font-size:14px;color:#888;'>Money Mentor Pro</div>`+
+            `</div>`;
+        document.getElementById('sertifikat-area').innerHTML = html;
+        html2pdf(document.getElementById('sertifikat-area'), {margin:0, filename:'Sertifikat_Quiz_Literasi.pdf', html2canvas:{scale:2}, jsPDF:{orientation:'landscape'}});
     };
 });
 </script>
