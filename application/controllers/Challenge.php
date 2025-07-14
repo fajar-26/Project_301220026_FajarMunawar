@@ -6,23 +6,28 @@ class Challenge extends CI_Controller {
     }
     public function index() {
         $user = $this->session->userdata('user');
-        $this->load->view('challenge/index', ['user' => $user]);
+        $title = 'Challenge & Quiz - Money Mentor Pro';
+        $this->load->view('challenge/index', ['user' => $user, 'title' => $title]);
     }
     public function quiz() {
         $user = $this->session->userdata('user');
-        $this->load->view('challenge/quiz', ['user' => $user]);
+        $title = 'Quiz Literasi Finansial - Money Mentor Pro';
+        $this->load->view('challenge/quiz', ['user' => $user, 'title' => $title]);
     }
     public function leaderboard() {
         $user = $this->session->userdata('user');
         $leaderboard = $this->Challenge_model->get_leaderboard(20);
-        $this->load->view('challenge/leaderboard', ['user' => $user, 'leaderboard' => $leaderboard]);
+        $title = 'Leaderboard Challenge Bulanan - Money Mentor Pro';
+        $this->load->view('challenge/leaderboard', ['user' => $user, 'leaderboard' => $leaderboard, 'title' => $title]);
     }
     public function result() {
         $user = $this->session->userdata('user');
-        $this->load->view('challenge/result', ['user' => $user]);
+        $title = 'Hasil Quiz - Money Mentor Pro';
+        $this->load->view('challenge/result', ['user' => $user, 'title' => $title]);
     }
     public function quiz_interaktif() {
         $user = $this->session->userdata('user');
+        $title = 'Quiz Literasi Keuangan & Investasi - Money Mentor Pro';
         $questions = [
             [
                 'question' => 'Suppose you had $100 in a savings account and the interest rate was 2% per year. After five years, how much do you think you would have in the account if you left the money to grow?',
@@ -96,10 +101,11 @@ class Challenge extends CI_Controller {
                 'answer' => 1
             ],
         ];
-        $this->load->view('challenge/quiz_interaktif', ['user' => $user, 'questions' => $questions]);
+        $this->load->view('challenge/quiz_interaktif', ['user' => $user, 'questions' => $questions, 'title' => $title]);
     }
     public function quiz_bulanan() {
         $user = $this->session->userdata('user');
+        $title = 'Challenge Bulanan - Quiz Investasi - Money Mentor Pro';
         $questions = [
             [
                 'question' => 'Jika kamu berinvestasi Rp1.000.000 di reksa dana saham dengan return 10% per tahun, berapa estimasi dana kamu setelah 1 tahun?',
@@ -152,7 +158,7 @@ class Challenge extends CI_Controller {
                 'answer' => 1
             ],
         ];
-        $this->load->view('challenge/quiz_bulanan', ['user' => $user, 'questions' => $questions]);
+        $this->load->view('challenge/quiz_bulanan', ['user' => $user, 'questions' => $questions, 'title' => $title]);
     }
     public function submit_quiz_bulanan() {
         if ($this->input->method() === 'post') {
