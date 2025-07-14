@@ -27,7 +27,7 @@
                                 <i class="fas fa-book fa-3x mb-3"></i>
                                 <h5>Literasi Finansial</h5>
                                 <p>Belajar tentang investasi dan keuangan</p>
-                                <a href="#" class="btn btn-light">Mulai Belajar</a>
+                                <a href="<?= base_url('literasi') ?>" class="btn btn-light">Mulai Belajar</a>
                             </div>
                         </div>
                     </div>
