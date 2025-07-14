@@ -1,4 +1,4 @@
-<a href="/dashboard" class="btn btn-outline-secondary mb-3"><i class="fas fa-arrow-left"></i> Kembali ke Dashboard</a>
+<a href="/Project_301220026_FajarMunawar/dashboard" class="btn btn-outline-secondary mb-3"><i class="fas fa-arrow-left"></i> Kembali ke Dashboard</a>
 <div class="mb-4">
     <h2 class="fw-bold mb-2"><i class="fas fa-calculator"></i> Simulasi Investasi</h2>
     <p class="text-muted">Gunakan kalkulator di bawah untuk menghitung estimasi hasil investasi berdasarkan produk yang kamu pilih.</p>
