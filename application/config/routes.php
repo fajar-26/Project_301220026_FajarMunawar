@@ -66,3 +66,9 @@ $route['admin/articles'] = 'admin/articles';
 $route['admin/videos'] = 'admin/videos';
 $route['admin/categories'] = 'admin/categories';
 $route['admin/webinars'] = 'admin/webinars';
+
+// Challenge & Quiz routes
+$route['challenge'] = 'challenge/index';
+$route['challenge/quiz'] = 'challenge/quiz';
+$route['challenge/leaderboard'] = 'challenge/leaderboard';
+$route['challenge/result'] = 'challenge/result';

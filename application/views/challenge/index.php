@@ -1,3 +1,4 @@
+<?php $this->load->view('dashboard/header'); ?>
 <div class="mb-4">
     <h2 class="fw-bold mb-2"><i class="fas fa-trophy"></i> Challenge & Quiz</h2>
     <p class="text-muted">Sistem gamification untuk belajar investasi dan literasi finansial. Ikuti challenge bulanan, kerjakan quiz, raih skor tertinggi, dan menangkan hadiah menarik!</p>
@@ -26,4 +27,5 @@
             </div>
         </div>
     </div>
-</div> 
+</div>
+<?php $this->load->view('dashboard/footer'); ?> 

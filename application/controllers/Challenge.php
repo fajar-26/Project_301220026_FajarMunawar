@@ -5,15 +5,19 @@ class Challenge extends CI_Controller {
         $this->load->model('Challenge_model');
     }
     public function index() {
-        $this->load->view('challenge/index');
+        $user = $this->session->userdata('user');
+        $this->load->view('challenge/index', ['user' => $user]);
     }
     public function quiz() {
-        $this->load->view('challenge/quiz');
+        $user = $this->session->userdata('user');
+        $this->load->view('challenge/quiz', ['user' => $user]);
     }
     public function leaderboard() {
-        $this->load->view('challenge/leaderboard');
+        $user = $this->session->userdata('user');
+        $this->load->view('challenge/leaderboard', ['user' => $user]);
     }
     public function result() {
-        $this->load->view('challenge/result');
+        $user = $this->session->userdata('user');
+        $this->load->view('challenge/result', ['user' => $user]);
     }
 } 

@@ -15,7 +15,7 @@
             </a>
             <div class="navbar-nav ms-auto">
                 <span class="navbar-text me-3">
-                    <i class="fas fa-user"></i> <?= $user['name'] ?>
+                    <i class="fas fa-user"></i> <?= isset($user['name']) ? htmlspecialchars($user['name']) : 'Guest' ?>
                 </span>
                 <a class="nav-link" href="<?= base_url('auth/logout') ?>">
                     <i class="fas fa-sign-out-alt"></i> Logout

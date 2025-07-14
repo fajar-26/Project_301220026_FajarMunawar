@@ -47,7 +47,7 @@
                                 <i class="fas fa-trophy fa-3x mb-3"></i>
                                 <h5>Challenge & Quiz</h5>
                                 <p>Uji pengetahuan dan dapat hadiah</p>
-                                <a href="#" class="btn btn-light">Ikuti Challenge</a>
+                                <a href="<?= base_url('challenge') ?>" class="btn btn-light">Ikuti Challenge</a>
                             </div>
                         </div>
                     </div>
